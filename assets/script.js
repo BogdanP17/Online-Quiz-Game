@@ -1,54 +1,65 @@
-let question = document.getElementsById("question");
-let choices = Array.from(documnet.getElementsByClassName("text"));
 
-let questions = [
+
+const questions = [
 
     {
         question : "Where is playing Leo Messi?",
-        option1: "Barcelona",
-        option2: "Real Madrid",
-        option3: "East Ham",
-        option4: "Chealse",
-        correctAnswer: 1
+        answers :[
+           
+            { text: "Barcelona", correct: true},
+            { text: "Real Madrid", correct: false},
+            { text: "East Ham", correct: false},
+            { text: "Chealsea", correct: false},    
+        ]
     },
     {
-        question: "Connor MG is ",
-        option1: "MMA Fighter",
-        option2: "F1 Driver",
-        option3: "Golf Player",
-        option4: "Dancer",
-        correctAnswer: 1
+        question: "Connor McGreggor is ",
+        answers: [
+            {text: "F1 Driver", correct: false},
+            {text: "MAA Fighter", correct: true},
+            {text: "Golf Player", correct: false},
+            {text: "Dancer", correct: false},
+        ]
     }
 
-]
+];
+ const questionElement= document.getElementById("question");
+ const answerButtons = document.getElementById("answer-buttons");
+ const nextButton = document.getElementById("next");
 
-const maxQuestions = 10;
-let currentQuestion = {};
-let correctAnswers = 0;
-let userSelection = null;
-let availableQuestion = [];
-let score = 0;
-let questionCounter = 0;
+ let currentQuestionIndex = 0;
+ let score = 0;
 
 
-// Game Function
-function gameArea(){
-    
-    availableQuestion = [...questions];
-}
-function displayNextQuestion() {
-    questionCounter++;
-    const questionIndex = Math.floor(Math.random() * availableQuestion.length);
-    currentQuestion = availableQuestion[questionIndex];
-    question.innerText = currentQuestion.question;
+ function startGame(){
+    currentQuestionIndex = 0;
+    score = 0;
+    nextButton.innerHTML = "Next";
+    nextQuestion();
 
+ }
 
-}
-// Check the answer
-function checkUserAnswer(){
-  if(userSelection === answer){
-    score++
-  }
-}
+ function nextQuestion(){
+    resetState();
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNo = currentQuestionIndex + 1;
+    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
-displayNextQuestion();
+    currentQuestion.answers.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerHTML = answer.text;
+        button.classList.add("btn");
+        answerButtons.appendChild(button);
+
+    });
+
+ }
+
+ function resetState(){
+    nextButton.style.display = "none";
+    while(answerButtons.firstChild){
+        answerButtons.removeChild(answerButtons.firstChild);
+    }
+ }
+
+startGame();
