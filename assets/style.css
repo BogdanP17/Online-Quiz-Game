@@ -13,7 +13,7 @@ body{
     
 }
 
-.game{
+.game-button{
     font-size: xx-large;
     border-radius: 200px;
     background-color:wheat;
@@ -33,6 +33,13 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
 }
 
 p{
@@ -58,4 +65,33 @@ p{
 i:hover{
     cursor: pointer;
     box-shadow: 0 1em 1.5rem rgba(3, 7, 243, 0.705);
+}
+
+.main-div{
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0, auto;
+    font-size: 1.5;
+    padding-top: 30px ;
+    padding-bottom: 20px;
+}
+
+
+
+.choice{
+    display: flex;
+    border-radius: 10px;
+    border: 0.1rem solid green;
+}
+.prefix{
+    background-color: red;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+.text{
+    width: 100%;
+    padding: 0.5rem;
 }
