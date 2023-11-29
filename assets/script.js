@@ -20,6 +20,15 @@ const questions = [
             {text: "Golf Player", correct: false},
             {text: "Dancer", correct: false},
         ]
+    },
+    {
+        question: "Who win the 2019 world cuo?",
+        answers: [
+            { text: "France", correct: false},
+            { text: "Romania", correct: false},
+            { text: "Argentina", correct: true},
+            { text: "Germany", correct: false},
+        ]
     }
 
 ];
@@ -50,6 +59,10 @@ const questions = [
         button.innerHTML = answer.text;
         button.classList.add("btn");
         answerButtons.appendChild(button);
+        if(answer.correct){
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener("click", selectAnswer);
 
     });
 
@@ -60,6 +73,23 @@ const questions = [
     while(answerButtons.firstChild){
         answerButtons.removeChild(answerButtons.firstChild);
     }
+ }
+
+ function selectAnswer(e){
+    const selectedBtn = e.target;
+    const isCorrect = selectedBtn.dataset.correct === "true";
+        if(isCorrect){
+            selectedBtn.classList.add("correct")
+        }else {
+            selectedBtn.classList.add("incorrect");
+        }
+        Array.from(answerButtons.children).forEach(button =>{
+            if(button.dataset.correct === "true"){
+                button.classList.add("correct");
+            }
+            button.disable = "true";
+        });
+        nextButton.style.display = "block";
  }
 
 startGame();
