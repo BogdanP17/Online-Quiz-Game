@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Lugrasimo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(129, 110, 121, 0.08);;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.game{
+    font-size: xx-large;
+    border-radius: 200px;
+    background-color:wheat;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.first-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    flex: 1 0 auto;
+}
+h1{
+    font-family: Agbalumo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    justify-content: center;
+    display: flex;
+    padding-top: 50px;
+    font-size: 5rem;
+    color:blue
+}
+.social-medias{
+    background-color: lightslategray;
+    text-align: center;
+    justify-content: space-evenly;
+    display: flex;
+    padding: 10px 0;
+    font-size: x-large;
+    
+}
+.social-medias i {
+    color: black;
+}
+
+i:hover{
+    cursor: pointer;
+    box-shadow: 0 1em 1.5rem rgba(3, 7, 243, 0.705);
+}
