@@ -80,6 +80,7 @@ const questions = [
     const isCorrect = selectedBtn.dataset.correct === "true";
         if(isCorrect){
             selectedBtn.classList.add("correct")
+            score++;
         }else {
             selectedBtn.classList.add("incorrect");
         }
@@ -87,9 +88,35 @@ const questions = [
             if(button.dataset.correct === "true"){
                 button.classList.add("correct");
             }
-            button.disable = "true";
+            button.disabled = "true";
         });
         nextButton.style.display = "block";
  }
+
+ function showScore(){
+    resetState();
+    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    nextButton.innerHTML = "Play Again.";
+    nextButton.style.display = "block";
+ }
+
+
+
+ function handleNextButton(){
+    currentQuestionIndex++;
+    if(currentQuestionIndex < questions.length){
+        nextQuestion();
+    }else {
+        showScore();
+    }
+ }
+
+ nextButton.addEventListener("click", ()=>{
+    if(currentQuestionIndex < questions.length) {
+        handleNextButton();
+    }else {
+        startGame();
+    }
+ })
 
 startGame();
