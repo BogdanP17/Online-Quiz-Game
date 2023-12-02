@@ -1,5 +1,5 @@
 
-
+// Questions array 
 const questions = [
 
     {
@@ -102,7 +102,7 @@ const questions = [
  let currentQuestionIndex = 0;
  let score = 0;
 
-
+// Game function
  function startGame(){
     currentQuestionIndex = 0;
     score = 0;
@@ -111,6 +111,7 @@ const questions = [
 
  }
 
+ // Next questions function
  function nextQuestion(){
     resetState();
     let currentQuestion = questions[currentQuestionIndex];
@@ -137,7 +138,7 @@ const questions = [
         answerButtons.removeChild(answerButtons.firstChild);
     }
  }
-
+// Selected answers by user function 
  function selectAnswer(e){
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
@@ -147,6 +148,7 @@ const questions = [
         }else {
             selectedBtn.classList.add("incorrect");
         }
+        
         Array.from(answerButtons.children).forEach(button =>{
             if(button.dataset.correct === "true"){
                 button.classList.add("correct");
@@ -156,13 +158,16 @@ const questions = [
         nextButton.style.display = "block";
  }
 
+
+ // Score function
  function showScore(){
     resetState();
-    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    questionElement.innerHTML = `You scored ${score} out of ${questions.length} !`;
     nextButton.innerHTML = "Play Again.";
     nextButton.style.display = "block";
  }
 
+ // Next button for questions
  function handleNextButton(){
     currentQuestionIndex++;
     if(currentQuestionIndex < questions.length){
