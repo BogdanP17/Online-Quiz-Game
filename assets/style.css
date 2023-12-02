@@ -25,7 +25,6 @@
 .button-game{
     border-radius: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color:;
     font-size: 1.5em;
 }
 
@@ -90,7 +89,6 @@ i:hover{
     font-size: 1.5em;
     color: red;
     font-weight: 600;
-    border-bottom: 1px solid #333;
     padding-bottom: 50px;
 }
 
