@@ -38,5 +38,27 @@ We are glad to announce that we have the best online quiz in sport domain.
  <li>CSS</li>
     <ul><li>Using the W3C Jigsaw validator no errors was found</li></ul>
  <li>JavaScript</li>
-    <ul><li>Using the jshint.com validator no errors was found </li></ul>   
+    <ul><li>Using the jshint.com validator no errors was found </li></ul>
+ <li>Accessibility</li>
+    <ul><li>By runnig the lighthouse in devtools fonts and colors are easy to read.     
  </ul>
+
+ # Unfixed Bugs
+  - No unfixed bugs founded.
+
+  # Technology:
+   - HTML to write the first and second pages.
+   - Css to style the pages.
+   - JavaScript to create the quiz.
+
+   # Future futures:
+
+
+   - We are thinking that a timer set up on the top of the quiz.
+
+   # Credits 
+
+<ul>
+<li>Images:</li>
+<ul><li>The media images was taken from [Pexels](https://www.pexels.com/).
+ 
