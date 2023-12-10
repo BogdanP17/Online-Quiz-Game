@@ -1,35 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Lugrasimo&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.img{
+.img {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 /* First page img style */
-.stadium{
+.stadium {
     width: 500px;
     height: fit-content;
     justify-content: space-evenly;
     padding-left: 5px;
-    
-    
-    
+
+
+
 }
+
 /* First page style */
-.first{
+.first {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background-color: rgba(125, 10, 246, 0.69);
 }
 
-.fcc-btn{
+.fcc-btn {
     background-color: #199319;
     color: white;
     padding: 15px 25px;
@@ -37,40 +39,45 @@
     text-decoration: none;
 }
 
-.fcc-btn:hover{
+.fcc-btn:hover {
     background-color: blue;
     color: red;
 }
+
 /* Second page background*/
-.second{
-    background-color:rgba(47, 0, 255, 0.849);
+.second {
+    background-color: rgba(47, 0, 255, 0.849);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    
-    
+
+
 }
+
 /* Start game button  */
-.button-game{
+.button-game {
     border-radius: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5em;
 }
+
 /* Fist page div */
-.first-page{
+.first-page {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 50px;
     flex: 1 0 auto;
 }
-h1{
+
+h1 {
     font-family: Agbalumo;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-h3{
+
+h3 {
     display: flex;
     justify-content: center;
     padding-top: 2rem;
@@ -78,7 +85,7 @@ h3{
     font-size: 2rem;
 }
 
-p{
+p {
     justify-content: center;
     display: flex;
     padding-top: 50px;
@@ -87,61 +94,63 @@ p{
 }
 
 /* Social medias contact style */
-.social-medias{
+.social-medias {
     background-color: lightslategray;
     text-align: center;
     justify-content: space-evenly;
     display: flex;
     padding: 10px 0;
     font-size: x-large;
-    
+
 }
+
 .social-medias i {
     color: black;
 }
 
-i:hover{
+i:hover {
     cursor: pointer;
     box-shadow: 0 1em 1.5rem rgba(3, 7, 243, 0.705);
 }
+
 /* Quiz game div */
-.main-div{
-    background-color: #fff ;
-   flex: 1 0 auto;
-   width: 90%;
-   max-width: 600px;
-   margin: 100px auto 0;
-   margin-bottom: 30px;
-   border-radius: 10px;
-   padding: 30px;
-   border: black;
+.main-div {
+    background-color: #fff;
+    flex: 1 0 auto;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 30px;
+    border: black;
 }
 
-.main-div h1{
+.main-div h1 {
     font-size: 1.5em;
     color: red;
     font-weight: 600;
     padding-bottom: 50px;
 }
 
-.quiz{
+.quiz {
     padding: 20px 20px;
     align-items: center;
     justify-content: center;
 }
 
-.quiz h2{
+.quiz h2 {
     font-size: 20px;
     color: red;
     align-items: center;
     display: flex;
     justify-content: center;
-    
+
 }
 
 /* Quiz answers */
-.btn{
-    
+.btn {
+
     width: 100%;
     padding: 20px;
     text-align: center;
@@ -150,14 +159,15 @@ i:hover{
     border: 1px solid black;
     margin: 10px 0;
     cursor: pointer;
-    
+
 }
-.btn:hover{
+
+.btn:hover {
     box-shadow: 0 1em 1.5rem rgba(3, 7, 243, 0.705);
 }
 
 /* Next question button  */
-#next{
+#next {
     background-color: black;
     color: white;
     font-weight: 500;
@@ -168,16 +178,15 @@ i:hover{
     border-radius: 10px;
 }
 
-#next:hover{
+#next:hover {
     background-color: green;
     box-shadow: 0 1em 2em blue;
 }
 
-.correct{
+.correct {
     background-color: green;
 }
 
-.incorrect{
+.incorrect {
     background-color: red;
 }
-

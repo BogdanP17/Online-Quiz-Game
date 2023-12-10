@@ -1,12 +1,12 @@
 # Online Quiz Game
 
-We are glad to announce that we have the best online quiz in sport domain. The app is running smooth and is fun to paly it.
+We are glad to announce that we have the best online quiz in sport domain. The app is running smoothly and is fun to play it.
 
 ## User Stories
 
 
-- As a casual user, i want that the quiz is interactive and easy to play.
-- As a regular user i want the quiz to be chellengeble.
+- As a casual user, I want that the quiz is interactive and easy to play.
+- As a regular user, I want the quiz to be chellengeble.
 
 # Futures
 
@@ -26,7 +26,7 @@ We are glad to announce that we have the best online quiz in sport domain. The a
 # Testing
 
 <ul>
-<li>I tested that the Quiz works on onther browsers: Chrome, Fire Fox, Microsoft Edge.</li>
+<li>I tested that the Quiz works on other browsers: Chrome, Fire Fox, Microsoft Edge.</li>
 <li>I can confirm that all the buttons are working.</li>
 <li>I have tested the app in devtools and debugging with Visual Code Studio.</li>
 </ul>
@@ -36,6 +36,8 @@ We are glad to announce that we have the best online quiz in sport domain. The a
 ## Solved bugs
 
  - I had a problem with the answers on the quiz. The answers cannot be visible. The problem was on the HMTL file with a wrong typping.
+
+ <img src="readmedocs/bugs.png">
 
 
  # Validator Testing
@@ -50,7 +52,7 @@ We are glad to announce that we have the best online quiz in sport domain. The a
  <li>Accessibility</li>
     <ul><li>By runnig the lighthouse in devtools fonts and colors are easy to read.     
  </ul>
- <img src="readmedox/Lighthouse.png">
+ <img src="readmedocs/Lighthouse.png">
 
  # Unfixed Bugs
   - No unfixed bugs founded.
@@ -59,17 +61,17 @@ We are glad to announce that we have the best online quiz in sport domain. The a
 
   <li>First page</li>
    <ul><li>On the first page i have tested that the "Start Game" button works.</li>
-   <img src="readmedox/first.png">
+   <img src="readmedocs/first.png">
        <li>On the footer i have tested all the 3 social medias.</li></ul>
-       <img src="readmedox/socialmedias.png">
+       <img src="readmedocs/socialmedias.png">
    <li>Second Page</li>
-   <img src="readmedox/second.png">
+   <img src="readmedocs/second.png">
       <ul>  <li> On the second page i tested the game.
       On the each question if the answer is corret the selected answer will turn green.
       If the answer is wrong the selected answer will turn red.</li>
       <li>At the end of the game i tested the score if it works.</li>
-      <img src="readmedox/correct.png">
-      <img src="readmedox/incorrect.png">
+      <img src="readmedocs/correct.png">
+      <img src="readmedocs/incorrect.png">
             
 
 
@@ -83,20 +85,25 @@ We are glad to announce that we have the best online quiz in sport domain. The a
    # Deployment
 
    ## GitHub
-
+   
    <ul><li>We have deployd the quiz to GutHub.</li>
-   <li>On the GitHub pahe head to settings.</li>
-   <li>From drop-down menu head to Master Branch.</li>
-   <li>After Master Branch was selected it will provide the link to quiz.
+      <li>On the GitHub pahe head to settings.</li>
+      <li>From drop-down menu head to Master Branch.</li>
+      <li>After Master Branch was selected it will provide the link to quiz.</ul>
 
-   # Visual Studio Code
 
-   <ul><li>In the Visul Studio Code we have write the code for the quiz.</li>
+
+   ## Visual Studio Code
+
+
+   <ul><li>In the Visul Studio Code we have write the code for the quiz.</li></ul>
 
   
    # Credits 
 
 <ul>
-<li>Images:</li>
-<ul><li>The media images was taken from [Pexels]<https://www.pexels.com/>.
+
+
+### Images:
+<li>The media images was taken from [Pexels] <https://www.pexels.com/>.</ul>
  
